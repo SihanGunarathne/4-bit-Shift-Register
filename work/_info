@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dG:/6th Semester/HDL/4-bit-Shift Register
+vFourbit_SIPO_shiftReg
+Z0 !s110 1620711589
+!i10b 1
+!s100 Dc`g1AW]h3Q_8jAT?@MUQ0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+II]I<nZ]Q``P4m]]dh24kO3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dG:/6th Semester/HDL/Assignment01/EE6205_ASSIGNMENT01_3171/4-bit-Shift Register
+Z4 w1614918696
+Z5 8./Fourbit_SIPO_shiftReg.v
+Z6 F./Fourbit_SIPO_shiftReg.v
+!i122 21
+L0 1 39
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1620711588.000000
+!s107 ./Fourbit_SIPO_shiftReg.v|
+Z9 !s90 -reportprogress|300|./Fourbit_SIPO_shiftReg.v|
+!i113 1
+Z10 tCvgOpt 0
+n@fourbit_@s@i@p@o_shift@reg
+vFourbit_SIPO_shiftReg_testbench
+R0
+!i10b 1
+!s100 3^e3WDdUIcmI=^R3]0OSE0
+R1
+ILQOKdobUDLnR6oJiPR_8:2
+R2
+R3
+R4
+R5
+R6
+!i122 21
+L0 42 43
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 ./Fourbit_SIPO_shiftReg.v|
+R9
+!i113 1
+R10
+n@fourbit_@s@i@p@o_shift@reg_testbench

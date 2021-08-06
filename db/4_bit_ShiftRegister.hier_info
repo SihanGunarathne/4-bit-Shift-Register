@@ -1,0 +1,16 @@
+|Fourbit_SIPO_shiftReg
+clk => shiftRegBank[0].CLK
+clk => shiftRegBank[1].CLK
+clk => shiftRegBank[2].CLK
+clk => shiftRegBank[3].CLK
+rst => shiftRegBank[0].ACLR
+rst => shiftRegBank[1].ACLR
+rst => shiftRegBank[2].ACLR
+rst => shiftRegBank[3].ACLR
+data_in => shiftRegBank[0].DATAIN
+data_out[0] <= shiftRegBank[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= shiftRegBank[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= shiftRegBank[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= shiftRegBank[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,83 @@
+module Fourbit_SIPO_shiftReg(clk,reset, data_si, data_po);
+
+	input clk, data_si,reset;
+
+	output [3:0] data_po;
+
+	wire[3:0] data_po;
+
+	reg [3:0] shiftRegBank;
+
+
+	always @(posedge clk,posedge reset)
+
+		begin
+
+			if (reset == 1'b1)
+
+			shiftRegBank <= 4'b0000;
+
+		else
+
+		begin
+
+			shiftRegBank <= shiftRegBank << 1'b1;
+
+			shiftRegBank[0] <= data_si;
+
+		end
+
+	end
+
+	assign data_po = shiftRegBank;
+
+endmodule
+
+
+
+ 
+
+module sipoShiftReg_testbench;
+
+reg clk,reset;
+
+reg data_si;
+
+wire [3:0] data_po;
+
+shiftReg_SIPO source (clk,reset,data_si,data_po);
+
+initial begin
+
+	clk = 0;
+
+end
+
+
+initial begin
+	reset = 1;
+	#20;reset = 0;
+
+	data_si = 1'b1;
+
+	#10 data_si=1'b1;
+
+	#10 data_si=1'b0;
+
+	#10 data_si=1'b1;
+
+	#10 data_si=1'b1;
+
+	#10 data_si=1'b0;
+
+
+end
+
+always 
+begin
+#5 clk = ~clk;
+end
+
+initial #350 $finish;
+
+endmodule
